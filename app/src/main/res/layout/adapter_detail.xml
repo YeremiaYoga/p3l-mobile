@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidehori1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidehori2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="50dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidehori3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="96dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideverti1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideverti2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="100dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideverti3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="210dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideverti4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="310dp" />
+
+        <ImageView
+            android:id="@+id/gambarMenu"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintStart_toEndOf="@id/guideverti1"
+            app:layout_constraintTop_toBottomOf="@id/guidehori1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/namaMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GEDHANG GORENG"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/guideverti2"
+            app:layout_constraintTop_toBottomOf="@id/guidehori1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/hargaMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 180.000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/guideverti2"
+            app:layout_constraintTop_toBottomOf="@id/guidehori2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/statusPesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disiapkan"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/guideverti2"
+            app:layout_constraintTop_toBottomOf="@id/hargaMenu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
